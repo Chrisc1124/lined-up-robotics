@@ -11,6 +11,120 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#main > .post.team-section {
+				padding: 4rem 4rem 2rem 4rem;
+			}
+
+			#main > .post.team-section header.major {
+				margin-bottom: 1.5rem;
+			}
+
+			#main > .post.team-section header.major > h2 {
+				margin-bottom: 0.5rem;
+			}
+
+			.team-list {
+				list-style: none;
+				padding: 0;
+				margin: 0 auto;
+				display: inline-block;
+				text-align: center;
+			}
+
+			.team-list li {
+				margin: 0.35rem 0;
+			}
+
+			#main > .setup-section {
+				padding: 0;
+			}
+
+			.setup-section > header.major {
+				margin: 0;
+				padding: 2rem 4rem 0 4rem;
+			}
+
+			.setup-section > header.major > .date {
+				margin-bottom: 1rem;
+			}
+
+			.setup-section > .posts {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: stretch;
+				text-align: center;
+				width: 100%;
+				padding: 0;
+			}
+
+			.setup-section > .posts > * {
+				flex-shrink: 1;
+				flex-grow: 0;
+				padding: 4rem;
+				width: 50%;
+			}
+
+			.setup-section > .posts > article {
+				border-color: #eeeeee;
+				border-left-width: 2px;
+				border-style: solid;
+				border-top-width: 2px;
+				text-align: center;
+			}
+
+			.setup-section > .posts > article:nth-child(2n - 1) {
+				border-left-width: 0;
+			}
+
+			.setup-section > .posts > article:nth-child(-n + 2) {
+				border-top-width: 0;
+			}
+
+			@media screen and (max-width: 980px) {
+				.setup-section > .posts > * {
+					padding: 2.5rem;
+					width: 50%;
+				}
+			}
+
+			@media screen and (max-width: 736px) {
+				#main > .post.team-section {
+					padding: 3rem 2rem 1.5rem 2rem;
+				}
+
+				.setup-section > header.major {
+					padding: 1.5rem 2rem 0 2rem;
+				}
+
+				.setup-section > .posts > * {
+					padding: 2rem;
+					width: 100%;
+				}
+
+				.setup-section > .posts > article:nth-child(2n - 1) {
+					border-left-width: 2px;
+				}
+
+				.setup-section > .posts > article:nth-child(-n + 2) {
+					border-top-width: 2px;
+				}
+
+				.setup-section > .posts > article:nth-child(n) {
+					border-left-width: 0;
+				}
+
+				.setup-section > .posts > article:nth-child(-n + 1) {
+					border-top-width: 0;
+				}
+
+				.setup-section > .posts > article .image {
+					max-width: 25rem;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -44,35 +158,39 @@
 					<div id="main">
 
 						<!-- Team -->
-							<article class="post featured">
+							<article class="post featured team-section">
 								<header class="major">
-									<span class="date">Initial setup</span>
 									<h2>Our Team</h2>
 									<p>Group members</p>
 								</header>
-								<ul>
+								<ul class="team-list">
 									<li>Chris Chen</li>
 									<li>Murtaza Naqvi</li>
 									<li>Baosen Chen</li>
-									<li>Karan Virk </li>
+									<li>Karan Virk</li>
 								</ul>
 							</article>
 
 						<!-- Robot setup photos -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2>Original build</h2>
-									</header>
-									<span class="image fit"><img src="images/original_build.jpg" alt="Original robot build" /></span>
-								</article>
-								<article>
-									<header>
-										<h2>New build</h2>
-									</header>
-									<span class="image fit"><img src="images/new_build.jpg" alt="New robot build" /></span>
-								</article>
-							</section>
+							<div class="setup-section">
+								<header class="major">
+									<span class="date">Initial setup</span>
+								</header>
+								<section class="posts">
+									<article>
+										<header>
+											<h2>Original build</h2>
+										</header>
+										<span class="image fit"><img src="images/original_build.jpg" alt="Original robot build" /></span>
+									</article>
+									<article>
+										<header>
+											<h2>New build</h2>
+										</header>
+										<span class="image fit"><img src="images/new_build.jpg" alt="New robot build" /></span>
+									</article>
+								</section>
+							</div>
 
 					</div>
 
