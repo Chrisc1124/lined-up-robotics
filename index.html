@@ -1,286 +1,1061 @@
 <!DOCTYPE HTML>
+
 <!--
+
 	Massively by HTML5 UP
+
 	html5up.net | @ajlkn
+
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
 -->
+
 <html>
+
 	<head>
+
 		<title>Lined Up Robotics</title>
+
 		<meta charset="utf-8" />
+
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
 		<style>
+
 			/* Typography scale */
-			#main > .post.team-section header.major > h2 {
+
+			#main > .post.team-section header.major > h2,
+
+			.content-section header.major > h2 {
+
 				font-size: 2.25rem;
+
 				line-height: 1.2;
+
 				margin-bottom: 0.5rem;
+
 			}
 
-			#main > .post.team-section header.major > p {
+
+
+			#main > .post.team-section header.major > p,
+
+			.content-section header.major > p {
+
 				font-size: 1rem;
+
 			}
+
+
+
+			.team-meta {
+
+				margin-bottom: 1.25rem;
+
+				font-size: 1rem;
+
+			}
+
+
 
 			.setup-section > header.major > .date {
+
 				font-size: 1.4rem;
+
 				letter-spacing: 0.04em;
+
 			}
+
+
 
 			.setup-section > .posts > article header h2 {
+
 				font-size: 1.35rem;
+
 				margin-bottom: 1rem;
+
 			}
+
+
 
 			.demo-section header.major > h2 {
+
 				font-size: 2rem;
+
 				line-height: 1.2;
+
 				margin-bottom: 0.5rem;
+
 			}
+
+
 
 			.demo-section header.major > p {
+
 				font-size: 0.95rem;
+
 			}
+
+
 
 			#main > .post.team-section {
+
 				padding: 4rem 4rem 2rem 4rem;
+
 			}
+
+
 
 			#main > .post.team-section header.major {
+
 				margin-bottom: 1.5rem;
+
 			}
+
+
 
 			.team-list {
+
 				list-style: none;
+
 				padding: 0;
+
 				margin: 0 auto;
+
 				display: inline-block;
+
 				text-align: center;
+
 			}
+
+
 
 			.team-list li {
+
 				margin: 0.35rem 0;
+
 			}
+
+
 
 			#main > .setup-section {
+
 				padding: 0;
+
 			}
+
+
 
 			.setup-section > header.major {
+
 				margin: 0;
+
 				padding: 2rem 4rem 0 4rem;
+
 			}
+
+
 
 			.setup-section > header.major > .date {
+
 				margin-bottom: 1rem;
+
 			}
+
+
 
 			.setup-section > .posts {
+
 				display: flex;
+
 				flex-wrap: wrap;
+
 				align-items: stretch;
+
 				text-align: center;
+
 				width: 100%;
+
 				padding: 0;
+
 			}
+
+
 
 			.setup-section > .posts > * {
+
 				flex-shrink: 1;
+
 				flex-grow: 0;
+
 				padding: 4rem;
+
 				width: 50%;
+
 			}
+
+
 
 			.setup-section > .posts > article {
+
 				border-color: #eeeeee;
+
 				border-left-width: 2px;
+
 				border-style: solid;
+
 				border-top-width: 2px;
+
 				text-align: center;
+
 			}
+
+
 
 			.setup-section > .posts > article:nth-child(2n - 1) {
+
 				border-left-width: 0;
+
 			}
+
+
 
 			.setup-section > .posts > article:nth-child(-n + 2) {
+
 				border-top-width: 0;
+
 			}
 
-			@media screen and (max-width: 980px) {
-				.setup-section > .posts > * {
-					padding: 2.5rem;
-					width: 50%;
-				}
+
+
+			.setup-intro {
+
+				padding: 1.5rem 4rem 0 4rem;
+
+				max-width: 42rem;
+
+				margin: 0 auto;
+
+				text-align: center;
+
 			}
 
-			@media screen and (max-width: 736px) {
-				#main > .post.team-section {
-					padding: 3rem 2rem 1.5rem 2rem;
-				}
 
-				.setup-section > header.major {
-					padding: 1.5rem 2rem 0 2rem;
-				}
 
-				.setup-section > .posts > * {
-					padding: 2rem;
-					width: 100%;
-				}
+			.setup-intro ul {
 
-				.setup-section > .posts > article:nth-child(2n - 1) {
-					border-left-width: 2px;
-				}
+				text-align: left;
 
-				.setup-section > .posts > article:nth-child(-n + 2) {
-					border-top-width: 2px;
-				}
+				display: inline-block;
 
-				.setup-section > .posts > article:nth-child(n) {
-					border-left-width: 0;
-				}
+				margin: 0.75rem 0 0 0;
 
-				.setup-section > .posts > article:nth-child(-n + 1) {
-					border-top-width: 0;
-				}
-
-				.setup-section > .posts > article .image {
-					max-width: 25rem;
-					margin-left: auto;
-					margin-right: auto;
-				}
-
-				#main > .post.team-section header.major > h2 {
-					font-size: 1.75rem;
-				}
-
-				.setup-section > header.major > .date {
-					font-size: 1.2rem;
-				}
-
-				.demo-section header.major > h2 {
-					font-size: 1.6rem;
-				}
-
-				#main > .demo-section {
-					padding: 2rem 2rem 3rem 2rem;
-				}
 			}
+
+
+
+			.content-section {
+
+				padding: 3rem 4rem 4rem 4rem;
+
+				text-align: center;
+
+			}
+
+
+
+			.content-section header.major {
+
+				margin-bottom: 1.5rem;
+
+			}
+
+
+
+			.content-section .body-text {
+
+				max-width: 42rem;
+
+				margin: 0 auto 2rem auto;
+
+				text-align: left;
+
+			}
+
+
+
+			.content-section .table-wrapper {
+
+				max-width: 52rem;
+
+				margin: 0 auto;
+
+				overflow-x: auto;
+
+				text-align: left;
+
+			}
+
+
+
+			.image.main {
+
+				display: block;
+
+				max-width: 44rem;
+
+				margin: 0 auto;
+
+			}
+
+
+
+			.image.main img {
+
+				width: 100%;
+
+				border-radius: 4px;
+
+			}
+
+
+
+			.parts-list {
+
+				list-style: none;
+
+				padding: 0;
+
+				margin: 0 auto;
+
+				max-width: 32rem;
+
+				text-align: left;
+
+				font-size: 0.9rem;
+
+				color: #666666;
+
+			}
+
+
+
+			.parts-list li {
+
+				margin: 0.25rem 0;
+
+			}
+
+
 
 			#main > .demo-section {
+
 				padding: 3rem 4rem 4rem 4rem;
+
 				text-align: center;
+
 			}
+
+
 
 			.demo-section header.major {
+
 				margin-bottom: 1.5rem;
+
 			}
+
+
 
 			.demo-video {
+
 				display: block;
+
 				width: 100%;
+
 				max-width: 24rem;
+
 				margin: 0 auto;
+
 				border-radius: 4px;
+
 			}
+
+
+
+			@media screen and (max-width: 980px) {
+
+				.setup-section > .posts > * {
+
+					padding: 2.5rem;
+
+					width: 50%;
+
+				}
+
+			}
+
+
+
+			@media screen and (max-width: 736px) {
+
+				#main > .post.team-section {
+
+					padding: 3rem 2rem 1.5rem 2rem;
+
+				}
+
+
+
+				.setup-section > header.major,
+
+				.setup-intro {
+
+					padding-left: 2rem;
+
+					padding-right: 2rem;
+
+				}
+
+
+
+				.setup-section > .posts > * {
+
+					padding: 2rem;
+
+					width: 100%;
+
+				}
+
+
+
+				.setup-section > .posts > article:nth-child(2n - 1) {
+
+					border-left-width: 2px;
+
+				}
+
+
+
+				.setup-section > .posts > article:nth-child(-n + 2) {
+
+					border-top-width: 2px;
+
+				}
+
+
+
+				.setup-section > .posts > article:nth-child(n) {
+
+					border-left-width: 0;
+
+				}
+
+
+
+				.setup-section > .posts > article:nth-child(-n + 1) {
+
+					border-top-width: 0;
+
+				}
+
+
+
+				.setup-section > .posts > article .image {
+
+					max-width: 25rem;
+
+					margin-left: auto;
+
+					margin-right: auto;
+
+				}
+
+
+
+				#main > .post.team-section header.major > h2,
+
+				.content-section header.major > h2 {
+
+					font-size: 1.75rem;
+
+				}
+
+
+
+				.setup-section > header.major > .date {
+
+					font-size: 1.2rem;
+
+				}
+
+
+
+				.demo-section header.major > h2 {
+
+					font-size: 1.6rem;
+
+				}
+
+
+
+				#main > .demo-section,
+
+				.content-section {
+
+					padding: 2rem 2rem 3rem 2rem;
+
+				}
+
+			}
+
 		</style>
+
 	</head>
+
 	<body class="is-preload">
 
+
+
 		<!-- Wrapper -->
+
 			<div id="wrapper" class="fade-in">
 
+
+
 				<!-- Intro -->
+
 					<div id="intro">
+
 						<h1>Lined Up<br />
+
 						Robotics</h1>
+
 						<p>Line-following robot project<br />
+
 						ECE 5 - UCSD</p>
+
 						<ul class="actions">
+
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+
 						</ul>
+
 					</div>
+
+
 
 				<!-- Header -->
+
 					<header id="header">
+
 						<a href="index.html" class="logo">Lined Up Robotics</a>
+
 					</header>
 
+
+
 				<!-- Nav -->
+
 					<nav id="nav">
+
 						<ul class="links">
+
 							<li class="active"><a href="index.html">Home</a></li>
+
+							<li><a href="#build">Build</a></li>
+
+							<li><a href="#robot">Robot</a></li>
+
+							<li><a href="#pid">PID</a></li>
+
+							<li><a href="#scores">Scores</a></li>
+
+							<li><a href="#videos">Videos</a></li>
+
 						</ul>
+
 					</nav>
 
+
+
 				<!-- Main -->
+
 					<div id="main">
 
+
+
 						<!-- Team -->
-							<article class="post featured team-section">
+
+							<article class="post featured team-section" id="team">
+
 								<header class="major">
+
 									<h2>Our Team</h2>
-									<p>Group members</p>
+
+									<p>Team 23 — Lined Up Robotics</p>
+
 								</header>
+
+								<p class="team-meta"><strong>Team #:</strong> 23 &nbsp;|&nbsp; <strong>Team Name:</strong> Lined Up Robotics</p>
+
 								<ul class="team-list">
+
 									<li>Chris Chen</li>
+
 									<li>Murtaza Naqvi</li>
+
 									<li>Baosen Chen</li>
+
 									<li>Karan Virk</li>
+
 								</ul>
+
 							</article>
 
-						<!-- Robot setup photos -->
-							<div class="setup-section">
+
+
+						<!-- Robot building -->
+
+							<div class="setup-section" id="build">
+
 								<header class="major">
-									<span class="date">Initial setup</span>
+
+									<span class="date">Robot building</span>
+
 								</header>
+
+								<div class="setup-intro">
+
+									<p>Our robot was built from a custom 3D-printed chassis, a photoresistor line-sensing circuit, a motor driver, and an ESP32 microcontroller. We prototyped on breadboards first, then soldered permanent connections for competition.</p>
+
+									<ul>
+
+										<li>3D-designed and printed chassis and sensor mounts</li>
+
+										<li>Photoresistor array with light shield for track detection</li>
+
+										<li>L298N motor driver, DC motors, and battery pack</li>
+
+										<li>Potentiometer calibration circuit on the back of the robot</li>
+
+									</ul>
+
+								</div>
+
 								<section class="posts">
+
 									<article>
+
 										<header>
+
 											<h2>Original build</h2>
+
 										</header>
-										<span class="image fit"><img src="images/original_build.jpg" alt="Original robot build" /></span>
+
+										<span class="image fit"><img src="images/original_build.jpg" alt="Original robot prototype on breadboard" /></span>
+
 									</article>
+
 									<article>
+
 										<header>
+
 											<h2>New build</h2>
+
 										</header>
-										<span class="image fit"><img src="images/new_build.jpg" alt="New robot build" /></span>
+
+										<span class="image fit"><img src="images/new_build.jpg" alt="Updated robot build with soldered circuits" /></span>
+
 									</article>
+
 								</section>
+
 							</div>
 
-						<!-- Line following demo -->
-							<section class="demo-section">
+
+
+						<!-- Final competition robot -->
+
+							<section class="demo-section" id="robot">
+
 								<header class="major">
-									<h2>Line Following Demo</h2>
-									<p>Robot following the course line</p>
+
+									<h2>Final Competition Robot</h2>
+
+									<p>Annotated overview of our assembled robot</p>
+
 								</header>
-								<video class="demo-video" controls playsinline>
-									<source src="videos/follow_line.mp4" type="video/mp4">
-									Your browser does not support the video tag.
-								</video>
+
+								<span class="image main">
+
+									<img src="images/final_car_annotated.png?v=10" alt="Final competition robot labeled with ESP32, potentiometer circuit, motor driver, photoresistor circuit and light shield, and motors plus battery pack" />
+
+								</span>
+
+								<ul class="parts-list">
+
+									<li><strong>ESP32</strong> — microcontroller running line-following and PID control</li>
+
+									<li><strong>Photoresistor Circuit + Light Shield</strong> — senses the track line</li>
+
+									<li><strong>Motor Driver</strong> — drives the DC motors</li>
+
+									<li><strong>Motors + Battery Pack</strong> — propulsion and power</li>
+
+									<li><strong>Potentiometer Circuit (On Back)</strong> — calibration for speed and sensitivity</li>
+
+								</ul>
+
 							</section>
 
+
+
+						<!-- PID control -->
+
+							<section class="post content-section" id="pid">
+
+								<header class="major">
+
+									<h2>PID Control</h2>
+
+									<p>How we tuned our line-following robot for each track</p>
+
+								</header>
+
+								<div class="body-text">
+
+									<p>Our robot uses a PID controller to stay centered on the line. The proportional term (P) corrects steering based on how far off the line the sensors read. The integral term (I) reduces steady-state drift over time, and the derivative term (D) dampens oscillation so the robot does not overcorrect.</p>
+
+									<p>We kept I and D constant across all tracks (I = 0.07, D = 0.72) and only adjusted speed and P for each competition event. Drag race favored maximum speed on a mostly straight course, while freq sweep and loop prioritized accurate line following over raw speed.</p>
+
+								</div>
+
+								<div class="table-wrapper">
+
+									<table class="alt">
+
+										<thead>
+
+											<tr>
+
+												<th>Track</th>
+
+												<th>Speed</th>
+
+												<th>P</th>
+
+												<th>I</th>
+
+												<th>D</th>
+
+												<th>Reasoning</th>
+
+											</tr>
+
+										</thead>
+
+										<tbody>
+
+											<tr>
+
+												<td>Drag Race</td>
+
+												<td>100</td>
+
+												<td>56</td>
+
+												<td>0.07</td>
+
+												<td>0.72</td>
+
+												<td>Max speed on a mostly straight track with few turns — lowered P for stability at high speed</td>
+
+											</tr>
+
+											<tr>
+
+												<td>Freq Sweep</td>
+
+												<td>56</td>
+
+												<td>100</td>
+
+												<td>0.07</td>
+
+												<td>0.72</td>
+
+												<td>Prioritized line-following accuracy over speed; higher P for tighter correction</td>
+
+											</tr>
+
+											<tr>
+
+												<td>Loop</td>
+
+												<td>76</td>
+
+												<td>100</td>
+
+												<td>0.07</td>
+
+												<td>0.72</td>
+
+												<td>Moderate speed — fast enough to compete but slow enough to stay on the track reliably</td>
+
+											</tr>
+
+										</tbody>
+
+									</table>
+
+								</div>
+
+							</section>
+
+
+
+						<!-- Project poster -->
+
+							<section class="demo-section" id="poster">
+
+								<header class="major">
+
+									<h2>Project Poster</h2>
+
+									<p>Eyes on the Track — ECE 5 Spring 2024</p>
+
+								</header>
+
+								<span class="image main">
+
+									<img src="images/poster.png" alt="Eyes on the Track project poster showing robot design, lab progression, and system block diagram" />
+
+								</span>
+
+							</section>
+
+
+
+						<!-- Competition scores -->
+
+							<section class="post content-section" id="scores">
+
+								<header class="major">
+
+									<h2>Competition Scores</h2>
+
+									<p>Results from each track at competition</p>
+
+								</header>
+
+								<div class="table-wrapper">
+
+									<table class="alt">
+
+										<thead>
+
+											<tr>
+
+												<th>Track</th>
+
+												<th>Metric</th>
+
+												<th>Result</th>
+
+												<th>Rank</th>
+
+											</tr>
+
+										</thead>
+
+										<tbody>
+
+											<tr>
+
+												<td>Drag Race</td>
+
+												<td>Time</td>
+
+												<td>Eliminated in Round 1 (both brackets)</td>
+
+												<td>—</td>
+
+											</tr>
+
+											<tr>
+
+												<td>Freq Sweep</td>
+
+												<td>Distance, Time</td>
+
+												<td>Reached 6th segment in 24.96 s</td>
+
+												<td>—</td>
+
+											</tr>
+
+											<tr>
+
+												<td>Loop</td>
+
+												<td># of loops</td>
+
+												<td>19.37 loops</td>
+
+												<td>3rd</td>
+
+											</tr>
+
+										</tbody>
+
+									</table>
+
+								</div>
+
+							</section>
+
+
+
+						<!-- Competition videos -->
+
+							<div class="setup-section" id="videos">
+
+								<header class="major">
+
+									<span class="date">Competition runs</span>
+
+								</header>
+
+								<section class="posts">
+
+									<article>
+
+										<header>
+
+											<h2>Drag Race</h2>
+
+										</header>
+
+										<video class="demo-video" controls playsinline>
+
+											<source src="videos/drag_race.mp4" type="video/mp4">
+
+											Your browser does not support the video tag.
+
+										</video>
+
+									</article>
+
+									<article>
+
+										<header>
+
+											<h2>Freq Sweep</h2>
+
+										</header>
+
+										<video class="demo-video" controls playsinline>
+
+											<source src="videos/frequency.mp4" type="video/mp4">
+
+											Your browser does not support the video tag.
+
+										</video>
+
+									</article>
+
+								</section>
+
+							</div>
+
+
+
+						<!-- Team picture -->
+
+							<section class="demo-section" id="team-photo">
+
+								<header class="major">
+
+									<h2>Team Picture</h2>
+
+									<p>Our group on competition day</p>
+
+								</header>
+
+								<span class="image main">
+
+									<img src="images/group.png" alt="Lined Up Robotics team members together on competition day" />
+
+								</span>
+
+							</section>
+
+
+
+						<!-- Improvements -->
+
+							<section class="post content-section" id="improvements">
+
+								<header class="major">
+
+									<h2>Improvements &amp; Changes</h2>
+
+									<p>What we fixed and what we would do differently</p>
+
+								</header>
+
+								<div class="body-text">
+
+									<p>During the final week before competition, our improvements focused mainly on repairing broken hardware. We resoldered the photoresistor circuit, rebuilt the light shield to reduce interference from ambient light, and replaced the motors when they stopped working before reinstalling them. We also resoldered key connections and rewired parts of the robot to make the overall build more dependable. With more time, we would have redesigned the chassis so components and wiring stay clear of the wheels, built a more stable light shield, and spent additional effort fine-tuning PID parameters for each track.</p>
+
+								</div>
+
+							</section>
+
+
+
 					</div>
 
+
+
 				<!-- Copyright -->
+
 					<div id="copyright">
+
 						<ul><li>&copy; Lined Up Robotics</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+
 					</div>
+
+
 
 			</div>
 
+
+
 		<!-- Scripts -->
+
 			<script src="assets/js/jquery.min.js"></script>
+
 			<script src="assets/js/jquery.scrollex.min.js"></script>
+
 			<script src="assets/js/jquery.scrolly.min.js"></script>
+
 			<script src="assets/js/browser.min.js"></script>
+
 			<script src="assets/js/breakpoints.min.js"></script>
+
 			<script src="assets/js/util.js"></script>
+
 			<script src="assets/js/main.js"></script>
 
+
+
 	</body>
+
 </html>
+
+
